@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@media screen and (max-width: 1000px) {
+  #article,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+*,
+HTML {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.menu {
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  /* display: inline; */
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.menu > ul > li {
+  float: left;
+}
+
+.menu li a {
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+  color: #e38b29;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .list-dropdown {
+  display: block;
+}
+
+.list-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.list-dropdown a {
+  color: #e38b29 !important;
+}
+
+.list-dropdown a:hover {
+  font-weight: bold;
+}
+
+.opening {
+  height: 100vh;
+}
+
+.agama {
+  padding-left: 170px;
+  padding-top: 200px;
+}
+
+.greeting {
+  float: right;
+  padding-right: 350px;
+  padding-top: 295px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+h2,
+h3 {
+  color: #e38b29;
+}
+
+#article {
+  float: left;
+  width: 75%;
+}
+
+.card {
+    box-shadow: 4px 7px 13px -1px rgba(227,139,41,0.82);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.featured-image {
+  width: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: #e38b29;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+footer {
+  padding: 20px;
+  color: #e38b29;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
